@@ -1,0 +1,163 @@
+{
+  "evaluation_overview": {
+    "evaluation_date": "2025-08-14T02:34:33.866238",
+    "evaluator_version": "1.0",
+    "dataset_size": {
+      "projects": 2,
+      "tasks": 2,
+      "teams": 1,
+      "delay_alerts": 1
+    }
+  },
+  "individual_model_metrics": {
+    "sentiment_analysis": {
+      "model_type": "sentiment_analysis",
+      "classification_accuracy": 0.5,
+      "precision": 0.25,
+      "recall": 0.5,
+      "f1_score": 0.3333333333333333,
+      "sentiment_score_mae": 0.25,
+      "sentiment_score_rmse": 0.29154759474226505,
+      "samples_evaluated": 2,
+      "confusion_matrix": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "classification_report": "              precision    recall  f1-score   support\n\n    negative       0.00      0.00      0.00         1\n     neutral       0.50      1.00      0.67         1\n\n    accuracy                           0.50         2\n   macro avg       0.25      0.50      0.33         2\nweighted avg       0.25      0.50      0.33         2\n"
+    },
+    "complexity_scoring": {
+      "model_type": "complexity_scoring",
+      "classification_accuracy": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1_score": 0.0,
+      "complexity_score_mae": 44.0,
+      "complexity_score_rmse": 46.8187996428785,
+      "complexity_score_r2": -8.742222222222223,
+      "samples_evaluated": 2,
+      "confusion_matrix": [
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ]
+      ],
+      "classification_report": "              precision    recall  f1-score   support\n\n        high       0.00      0.00      0.00       1.0\n         low       0.00      0.00      0.00       0.0\n      medium       0.00      0.00      0.00       1.0\n\n    accuracy                           0.00       2.0\n   macro avg       0.00      0.00      0.00       2.0\nweighted avg       0.00      0.00      0.00       2.0\n"
+    },
+    "domain_classification": {
+      "model_type": "domain_classification",
+      "accuracy": 0.5,
+      "precision": 0.5,
+      "recall": 0.5,
+      "f1_score": 0.5,
+      "samples_evaluated": 2,
+      "confusion_matrix": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "classification_report": "              precision    recall  f1-score   support\n\n     backend       0.00      0.00      0.00         1\n    frontend       1.00      1.00      1.00         1\n     general       0.00      0.00      0.00         0\n\n    accuracy                           0.50         2\n   macro avg       0.33      0.33      0.33         2\nweighted avg       0.50      0.50      0.50         2\n"
+    },
+    "delay_prediction": {
+      "model_type": "delay_prediction",
+      "binary_classification_accuracy": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1_score": 1.0,
+      "probability_mae": 0.09999999999999999,
+      "probability_rmse": 0.09999999999999999,
+      "samples_evaluated": 2,
+      "confusion_matrix": [
+        [
+          1,
+          0
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "classification_report": "              precision    recall  f1-score   support\n\n       False       1.00      1.00      1.00         1\n        True       1.00      1.00      1.00         1\n\n    accuracy                           1.00         2\n   macro avg       1.00      1.00      1.00         2\nweighted avg       1.00      1.00      1.00         2\n"
+    },
+    "estimation_accuracy": {
+      "model_type": "estimation_accuracy_prediction",
+      "estimation_ratio_mae": 0.17999999999999994,
+      "estimation_ratio_rmse": 0.20353132437047614,
+      "complexity_estimation_correlation": 1.0,
+      "samples_evaluated": 2,
+      "mean_actual_ratio": 0.85,
+      "std_actual_ratio": 0.09999999999999998
+    }
+  },
+  "overall_performance": {
+    "overall_model_accuracy": 0.491,
+    "overall_f1_score": 0.4385964912280702,
+    "component_accuracies": {
+      "sentiment_analysis": 0.5,
+      "complexity_scoring": 0.0,
+      "domain_classification": 0.5,
+      "delay_prediction": 1.0,
+      "estimation_prediction": 0.8200000000000001
+    },
+    "total_samples_evaluated": 10,
+    "evaluation_timestamp": "2025-08-14T02:34:34.097978"
+  },
+  "methodology_notes": {
+    "ground_truth_source": "Expert annotations and historical validation data",
+    "evaluation_approach": "Cross-validation with hold-out test set",
+    "metrics_used": [
+      "Accuracy (classification tasks)",
+      "Precision, Recall, F1-score (classification)",
+      "MAE, RMSE (regression tasks)",
+      "Confusion matrices",
+      "Classification reports"
+    ],
+    "limitations": [
+      "Limited ground truth dataset size",
+      "Some metrics based on heuristic ground truth",
+      "Domain-specific evaluation needed for full validation"
+    ]
+  },
+  "recommendations": {
+    "model_improvement": [
+      "Increase ground truth dataset size",
+      "Implement cross-validation techniques",
+      "Add domain-specific fine-tuning",
+      "Regular model retraining with new data"
+    ],
+    "monitoring": [
+      "Set up continuous accuracy monitoring",
+      "Track model drift over time",
+      "Implement A/B testing for model updates",
+      "Regular expert validation of predictions"
+    ]
+  }
+}

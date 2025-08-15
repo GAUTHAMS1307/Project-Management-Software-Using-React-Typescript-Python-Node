@@ -1,0 +1,3 @@
+task_id,title,complexity_score,complexity_level,tech_terms,domain,estimation_accuracy,status,priority
+task1,Component Library Architecture,7,low,"['library', 'architecture']",frontend,0.95,completed,high
+task2,Real-time Chat Implementation,5,low,['websocket'],general,0.75,delayed,high

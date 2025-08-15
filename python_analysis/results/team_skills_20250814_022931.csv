@@ -1,0 +1,2 @@
+team_id,team_name,total_skills,skill_categories,specialization_score,primary_tech_stack,skill_diversity
+team1,Frontend Excellence Team,4,"{'frontend': ['React', 'Vue.js', 'TypeScript'], 'design': ['UI/UX']}",75.0,Full Stack JS,2

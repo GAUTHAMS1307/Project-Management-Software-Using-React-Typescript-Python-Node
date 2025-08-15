@@ -1,0 +1,13 @@
+Events,Responsible,Priority,No of Days,Start Date,Finish Date,% of complete,Status,Timeline
+Tooling order / Go Ahead release,RENAULT,A,3,01-Jun-25,03-Jun-25,100%,Completed,█                                                 
+Casting Tool Design,Dharmaraja,P,7,02-Jun-25,08-Jun-25,100%,Completed,███                                               
+Casting Tool Manufacturing,Dharmaraja,A,14,09-Jun-25,22-Jun-25,100%,Completed,    ███████                                       
+Casting Tool Trial & Proveout,Dharmaraja,P,7,23-Jun-25,29-Jun-25,100%,Completed,            ███                                   
+Casting Submission to Machine shop,Dharmaraja,P,7,30-Jun-25,06-Jul-25,100%,Completed,                ███                               
+Machining Fixture Design,Murugesan,P,7,02-Jul-25,08-Jul-25,100%,Completed,                 ███                              
+Machining Fixture Manufacturing,Kathirvel,A,21,09-Jul-25,29-Jul-25,100%,Completed,                     ███████████                  
+Production Gauges Design,Murugesan,P,7,02-Aug-25,08-Aug-25,100%,Completed,                                  ████            
+Production Gauges Manufacturing,Radhika,P,21,09-Aug-25,29-Aug-25,100%,Completed,                                      ████████████
+"Trials, adjust & Proveout",Prakash,A,7,07-Aug-25,13-Aug-25,50%,In Progress,                                     ██░░         
+OT Sample preparation & submission,Kumar,P,7,14-Aug-25,20-Aug-25,0%,Planned,                                         ░░░      
+Sample approval,RENAULT,A,7,21-Aug-25,27-Aug-25,0%,Planned,                                             ░░░  

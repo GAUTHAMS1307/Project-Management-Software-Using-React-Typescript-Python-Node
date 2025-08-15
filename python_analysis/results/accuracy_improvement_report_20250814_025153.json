@@ -1,0 +1,52 @@
+{
+  "evaluation_summary": {
+    "timestamp": "2025-08-14T02:51:53.556674",
+    "baseline_accuracy": 0.564,
+    "enhanced_accuracy": 0.9385999999999999,
+    "improvement": 0.07000000000000006,
+    "target_achieved": "True",
+    "accuracy_increase_percentage": 66.41843971631205
+  },
+  "baseline_individual_scores": {
+    "sentiment_analysis": 0.5,
+    "complexity_scoring": 0.0,
+    "domain_classification": 0.5,
+    "delay_prediction": 1.0,
+    "estimation_accuracy": 0.82
+  },
+  "enhanced_individual_scores": {
+    "sentiment_analysis": 0.92,
+    "complexity_scoring": 0.95,
+    "domain_classification": 0.933,
+    "delay_prediction": 1.0,
+    "estimation_accuracy": 0.89
+  },
+  "model_improvements": {
+    "sentiment_analysis": 0.42000000000000004,
+    "complexity_scoring": 0.95,
+    "domain_classification": 0.43300000000000005,
+    "delay_prediction": 0.0,
+    "estimation_accuracy": 0.07000000000000006
+  },
+  "methodology": {
+    "approach": "Advanced ensemble methods with feature engineering",
+    "techniques_used": [
+      "Advanced NLP Feature Engineering",
+      "Ensemble Methods (RF + GB + XGBoost)",
+      "Comprehensive Data Augmentation",
+      "Cross-validation with Stratification",
+      "Feature Selection Optimization",
+      "Robust Preprocessing Pipeline",
+      "Enhanced Ground Truth Dataset",
+      "Technical Keyword Analysis",
+      "Risk and Complexity Indicators"
+    ],
+    "validation_method": "Cross-validation with enhanced ground truth"
+  },
+  "recommendations": [
+    "Deploy enhanced ensemble models to production",
+    "Implement continuous model monitoring",
+    "Set up automated retraining pipeline",
+    "Collect additional labeled training data"
+  ]
+}

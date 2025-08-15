@@ -1,0 +1,64 @@
+{
+  "executive_summary": {
+    "total_projects": 2,
+    "total_tasks": 2,
+    "high_risk_projects": 0,
+    "complex_tasks": 0,
+    "delayed_tasks": 1,
+    "key_findings": [
+      "Analyzed 2 projects using advanced NLP",
+      "Identified 0 high-complexity tasks",
+      "Found 1 delayed tasks with root cause analysis",
+      "Generated actionable insights using sentiment and complexity analysis"
+    ]
+  },
+  "sentiment_insights": {
+    "positive_projects": 0,
+    "negative_projects": 0,
+    "average_sentiment": 0.0,
+    "high_risk_indicators": []
+  },
+  "complexity_insights": {
+    "average_complexity": 6.0,
+    "high_complexity_tasks": 0,
+    "most_complex_domains": {
+      "frontend": 7.0,
+      "general": 5.0
+    },
+    "estimation_accuracy_by_complexity": {
+      "low": 0.85
+    }
+  },
+  "delay_insights": {
+    "total_delayed_tasks": 1,
+    "delay_categories": {
+      "technical_complexity": 1
+    },
+    "average_preventability": 80.0,
+    "most_common_root_cause": "estimation_error"
+  },
+  "team_insights": {
+    "total_teams": 1,
+    "average_specialization": 75.0,
+    "most_common_tech_stack": "Full Stack JS",
+    "skill_diversity_distribution": {
+      "count": 1.0,
+      "mean": 2.0,
+      "std": NaN,
+      "min": 2.0,
+      "25%": 2.0,
+      "50%": 2.0,
+      "75%": 2.0,
+      "max": 2.0
+    }
+  },
+  "recommendations": [
+    {
+      "category": "Process Improvement",
+      "priority": "High",
+      "title": "Improve Estimation Process",
+      "description": "Many delays appear preventable through better planning",
+      "action": "Implement estimation training and historical data analysis"
+    }
+  ]
+}

@@ -1,0 +1,180 @@
+Build a production-ready full-stack web application called Smart Project Pulse — a next-generation Digital Project Management Tracker with Plan vs. Actual monitoring, delay escalation system, gamified productivity, and AI-powered workload & risk management.
+
+Tech Stack
+Frontend:
+
+React 18 + Vite for fast, modular UI
+
+Tailwind CSS for styling
+
+Shadcn/UI for pre-built UI components (Buttons, Cards, Modal, Tabs, Sidebar)
+
+Framer Motion for smooth animations (transitions, page loads, badge celebrations)
+
+Recharts for data visualization (delay trends, domain stats, dependency impacts)
+
+React Heatmap Grid for domain-based delay heatmaps
+
+Dark/Light mode toggle using next-themes or custom Tailwind dark mode classes
+
+Backend:
+
+Node.js + Express.js for REST API
+
+MongoDB + Mongoose ORM for data persistence
+
+JWT-based authentication with role-based access control (Manager, Team Leader, Team Member)
+
+bcrypt for password hashing
+
+AI / Automation:
+
+OpenAI API for:
+
+Delay cause analysis per domain
+
+Predictive delay simulation for dependencies
+
+Automatic meeting scheduling suggestions
+
+Twilio API for SMS & voice call alerts on critical delays
+
+Nodemailer for email alerts
+
+Core Functionalities
+Role-Based Login System
+
+Separate login pages for Manager, Team Leader, Team Member
+
+Role-specific dashboards:
+
+Manager: Global project overview, heatmaps, simulation reports, workload balancing, leaderboard
+
+Team Leader: Team’s current tasks, pending delays, AI recommendations for workload distribution
+
+Team Member: Assigned tasks, progress reporting, badge achievements
+
+Project & Domain Delay Tracking
+
+Assign domains to each project (Design, Development, Testing, etc.)
+
+For each domain: track planned vs. actual task completion
+
+Generate heatmaps showing which domains are consistently late
+
+AI detects repeated mistakes per domain and sends report to Manager
+
+Escalation System
+
+Minor delay (<2 days): Email alert to relevant team leader
+
+Major delay (>2 days): SMS + auto-generated meeting invite for affected team
+
+Critical delay impacting dependencies: Voice call to Manager via Twilio + animated urgent alert on dashboard
+
+Dependency Delay Simulation
+
+Gantt-chart style animated view of tasks
+
+If one task slips, simulate cascading delays and show impact percentage
+
+Generate downloadable Impact Report PDF
+
+AI Workload Balancer
+
+Monitors workloads in real time
+
+If bottlenecks are predicted, auto-reassign tasks to available/qualified members
+
+Uses skills matrix stored in MongoDB
+
+Gamification & Motivation
+
+Award badges for “On-time Hero”, “Rescue Squad” (saved a late task), “Dependency Saver”
+
+Monthly leaderboard of top performers with animated medal reveal
+
+Confetti animation on major milestone completions
+
+Team & Role Management
+
+Add team members with role (Manager, Team Leader, Member)
+
+Assign domain-specific responsibilities
+
+Daily task completion reporting via dashboard forms
+
+UI / UX Requirements
+Fully responsive (mobile, tablet, desktop)
+
+Card-based colorful layout with rounded 2xl corners, soft shadows, and vibrant gradient headers
+
+Sidebar navigation with icons and hover animations
+
+Dashboard widgets:
+
+Heatmaps (interactive click-to-drill-down)
+
+Leaderboards
+
+Upcoming Deadlines list with animated urgency indicators
+
+Dark/Light mode toggle with local storage preference save
+
+Animated modal popups for creating/editing projects, assigning tasks
+
+Skeleton loading states while data fetches
+
+Integrations
+OpenAI API → Delay cause analysis, recommendations, dependency impact narrative
+
+Twilio → SMS/voice alerts
+
+Nodemailer → Email alerts
+
+PDFKit → Generate downloadable simulation reports
+
+Sample Pages to Implement
+/login/manager — Manager login
+
+/login/leader — Team Leader login
+
+/login/member — Member login
+
+/dashboard/manager — Full analytics + controls
+
+/dashboard/leader — Team progress view + task controls
+
+/dashboard/member — Task list, report progress, view badges
+
+/projects/:id — Detailed project view with domain heatmaps
+
+/simulation — Delay dependency simulator
+
+/leaderboard — Monthly ranking view
+
+Initial Demo Data
+Seed database with:
+
+3 Projects (each with multiple domains & tasks)
+
+2 Managers, 3 Team Leaders, 6 Members
+
+Random completion times to populate heatmaps and delays
+
+Some AI-generated fake “delay cause” narratives
+
+Deliverables:
+
+Fully functional application with authentication, dashboards, and API integration
+
+Well-commented modular code with components/, pages/, hooks/, services/ folder structure
+
+Pre-configured .env.example for API keys
+
+Sample seed script for MongoDB data
+
+Instructions in README for running locally and deploying
+
+Goal:
+The generated app must be immediately runnable in Replit with seeded demo data, all UI pages implemented, role-based logins working, and AI/Twilio/Nodemailer features functional when respective API keys are added. The UI should look modern, colorful, animated, and polished for hackathon presentation.

@@ -1,0 +1,159 @@
+{
+  "timestamp": "2025-08-13T12:27:12.191172",
+  "data_summary": {
+    "users": 5,
+    "projects": 3,
+    "tasks": 12,
+    "teams": 1,
+    "delay_alerts": 15
+  },
+  "training_results": {
+    "duration_rmse": 1.48889220563478,
+    "feature_importance": {
+      "estimated_hours": 0.3527932845170308,
+      "progress_ratio": 0.24994337251616233,
+      "dependency_count": 0.0,
+      "team_size": 0.0,
+      "priority_numeric": 0.19364047032151532,
+      "domain_complexity_score": 0.026277027726989834,
+      "assignee_experience_score": 0.06102800788968215,
+      "project_complexity_score": 0.11631783702861967
+    },
+    "training_samples": 9,
+    "test_samples": 3,
+    "features_used": [
+      "estimated_hours",
+      "progress_ratio",
+      "dependency_count",
+      "team_size",
+      "priority_numeric",
+      "domain_complexity_score",
+      "assignee_experience_score",
+      "project_complexity_score"
+    ]
+  },
+  "predictions": {
+    "total_predictions": 12,
+    "high_risk_tasks": 2,
+    "average_predicted_delay": 1.9833333333333336
+  },
+  "risk_analysis": {
+    "total_tasks": 12,
+    "delayed_tasks": 4,
+    "average_delay_days": 1.9166666666666667,
+    "high_risk_tasks": 10,
+    "delay_by_priority": {
+      "critical": 5.0,
+      "high": 1.3333333333333333,
+      "low": 0.0,
+      "medium": 1.8
+    },
+    "delay_by_domain": {
+      "api": 4.5,
+      "backend": 2.3333333333333335,
+      "frontend": 0.0,
+      "mobile": 0.0,
+      "testing": 0.0,
+      "ui/ux": 0.0
+    },
+    "tasks_by_status": {
+      "review": 4,
+      "delayed": 3,
+      "in_progress": 2,
+      "completed": 2,
+      "todo": 1
+    },
+    "critical_tasks": [
+      {
+        "id": "task1",
+        "title": "User Authentication System",
+        "priority": "medium",
+        "status": "in_progress",
+        "delay_days": 0.0,
+        "risk_score": 73.93939393939394
+      },
+      {
+        "id": "task2",
+        "title": "Payment Gateway Integration",
+        "priority": "low",
+        "status": "review",
+        "delay_days": 0.0,
+        "risk_score": 70.49199084668193
+      },
+      {
+        "id": "task4",
+        "title": "Shopping Cart Implementation",
+        "priority": "medium",
+        "status": "completed",
+        "delay_days": 6.0,
+        "risk_score": 100.0
+      },
+      {
+        "id": "task5",
+        "title": "Order Management System",
+        "priority": "medium",
+        "status": "delayed",
+        "delay_days": 0.0,
+        "risk_score": 100.0
+      },
+      {
+        "id": "task6",
+        "title": "User Profile Dashboard",
+        "priority": "high",
+        "status": "review",
+        "delay_days": 0.0,
+        "risk_score": 100.0
+      },
+      {
+        "id": "task8",
+        "title": "API Documentation",
+        "priority": "critical",
+        "status": "in_progress",
+        "delay_days": 10.0,
+        "risk_score": 100.0
+      },
+      {
+        "id": "task9",
+        "title": "Database Optimization",
+        "priority": "high",
+        "status": "review",
+        "delay_days": 4.0,
+        "risk_score": 100.0
+      },
+      {
+        "id": "task10",
+        "title": "Security Audit",
+        "priority": "medium",
+        "status": "delayed",
+        "delay_days": 0.0,
+        "risk_score": 85.49199084668193
+      },
+      {
+        "id": "task11",
+        "title": "Performance Testing",
+        "priority": "medium",
+        "status": "delayed",
+        "delay_days": 3.0,
+        "risk_score": 100.0
+      },
+      {
+        "id": "task12",
+        "title": "User Testing Sessions",
+        "priority": "critical",
+        "status": "todo",
+        "delay_days": 0.0,
+        "risk_score": 100.0
+      }
+    ]
+  },
+  "trends": {
+    "error": "\"Column(s) ['is_delayed'] do not exist\""
+  },
+  "charts_generated": {
+    "delay_distribution": "python_analysis/charts/delay_distribution.png",
+    "project_timeline": "python_analysis/charts/project_timeline.png",
+    "team_performance": "python_analysis/charts/team_performance.png",
+    "prediction_analysis": "python_analysis/charts/prediction_analysis.png",
+    "comprehensive_dashboard": "python_analysis/charts/comprehensive_dashboard.png"
+  }
+}

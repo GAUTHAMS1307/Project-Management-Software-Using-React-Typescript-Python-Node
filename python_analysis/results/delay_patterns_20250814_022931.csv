@@ -1,0 +1,2 @@
+task_id,title,delay_reason,delay_category,root_cause,preventability_score,estimated_hours,actual_hours
+task2,Real-time Chat Implementation,WebSocket implementation more complex than estimated,technical_complexity,estimation_error,80,60,45

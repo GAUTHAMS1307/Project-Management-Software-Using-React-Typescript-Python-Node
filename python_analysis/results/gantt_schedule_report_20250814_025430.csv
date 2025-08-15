@@ -1,0 +1,13 @@
+Events,Responsible,Priority,No of Days,Start Date,Finish Date,% of complete,01-Jun,08-Jun,15-Jun,22-Jun,29-Jun,06-Jul,13-Jul,20-Jul,27-Jul,03-Aug,10-Aug,17-Aug,24-Aug,31-Aug
+Tooling order / Go Ahead release,RENAULT,A,3,01-Jun-25,03-Jun-25,100%,█, , , , , , , , , , , , , 
+Casting Tool Design,Dharmaraja,P,7,02-Jun-25,08-Jun-25,100%, ,█, , , , , , , , , , , , 
+Casting Tool Manufacturing,Dharmaraja,A,14,09-Jun-25,22-Jun-25,100%, , ,█,█, , , , , , , , , , 
+Casting Tool Trial & Proveout,Dharmaraja,P,7,23-Jun-25,29-Jun-25,100%, , , , ,█, , , , , , , , , 
+Casting Submission to Machine shop,Dharmaraja,P,7,30-Jun-25,06-Jul-25,100%, , , , , ,█, , , , , , , , 
+Machining Fixture Design,Murugesan,P,7,02-Jul-25,08-Jul-25,100%, , , , , ,█, , , , , , , , 
+Machining Fixture Manufacturing,Kathirvel,A,21,09-Jul-25,29-Jul-25,100%, , , , , , ,█,█,█, , , , , 
+Production Gauges Design,Murugesan,P,7,02-Aug-25,08-Aug-25,100%, , , , , , , , , ,█, , , , 
+Production Gauges Manufacturing,Radhika,P,21,09-Aug-25,29-Aug-25,100%, , , , , , , , , , ,█,█,█, 
+"Trials, adjust & Proveout",Prakash,A,7,07-Aug-25,13-Aug-25,50%, , , , , , , , , , ,▓, , , 
+OT Sample preparation & submission,Kumar,P,7,14-Aug-25,20-Aug-25,0%, , , , , , , , , , , ,░, , 
+Sample approval,RENAULT,A,7,21-Aug-25,27-Aug-25,0%, , , , , , , , , , , , ,░, 
